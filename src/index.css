@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root,
+html.dark,
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --color-bg: #08090A;
+  --color-bg-deep: #010102;
+  --color-bg-secondary: #0F1011;
+  --color-surface: #141516;
+  --color-surface-hover: #1A1B1D;
+  --color-surface-high: #1E1F21;
+  --color-surface-border: rgba(255, 255, 255, 0.09);
+  --color-accent: #5E6AD2;
+  --color-accent-hover: #7170FF;
+  --color-accent-light: #8285F8;
+  --color-accent-subtle: rgba(94, 106, 210, 0.15);
+  --color-accent-border: rgba(113, 112, 255, 0.35);
+  --color-text-primary: #F7F8F8;
+  --color-text-secondary: #D0D6E0;
+  --color-text-muted: #8A8F98;
+}
+
+html.light,
+html[data-theme="light"] {
+  color-scheme: light;
+  --color-bg: #F8FAFC !important;
+  --color-bg-deep: #F1F5F9 !important;
+  --color-bg-secondary: #EDF2F7 !important;
+  --color-surface: #FFFFFF !important;
+  --color-surface-hover: #F8FAFC !important;
+  --color-surface-high: #E2E8F0 !important;
+  --color-surface-border: rgba(0, 0, 0, 0.09) !important;
+  --color-accent: #4F46E5 !important;
+  --color-accent-hover: #4338CA !important;
+  --color-accent-light: #6366F1 !important;
+  --color-accent-subtle: rgba(79, 70, 229, 0.10) !important;
+  --color-accent-border: rgba(79, 70, 229, 0.30) !important;
+  --color-text-primary: #0F172A !important;
+  --color-text-secondary: #475569 !important;
+  --color-text-muted: #64748B !important;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(128, 128, 128, 0.25);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(128, 128, 128, 0.4);
+}
+
+/* Smooth scrolling offset */
+html {
+  scroll-padding-top: 5rem;
+}

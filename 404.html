@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Shaik Nayab Rasool | Portfolio</title>
+    <script>
+      // GitHub Pages SPA redirect: preserves direct deep link routes by routing through HashRouter
+      (function() {
+        var path = window.location.pathname;
+        // Strip repo base name if present
+        var route = path.replace(/^\/portfolio\/?/, '');
+        var target = window.location.origin + '/portfolio/#/' + route + window.location.search + window.location.hash;
+        window.location.replace(target);
+      })();
+    </script>
+  </head>
+  <body style="background-color: #08090A; color: #F7F8F8; font-family: sans-serif; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0;">
+    <p>Loading Shaik Nayab Rasool's Portfolio...</p>
+  </body>
+</html>

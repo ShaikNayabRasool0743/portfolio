@@ -27,8 +27,8 @@ export const siteConfig: SiteConfig = {
 
   location: "Ongole, Andhra Pradesh, India",
   statusText: "Available for AI/ML & Software Engineering Roles",
-  resumeUrl: "/resume.pdf",
-  siteUrl: "https://shaiknayabrasool.dev",
+  resumeUrl: `${import.meta.env.BASE_URL}resume.pdf`,
+  siteUrl: "https://shaiknayabrasool0743.github.io/portfolio",
 
   // Verified Social Links from Resume PDF
   github: "https://github.com/ShaikNayabRasool0743",

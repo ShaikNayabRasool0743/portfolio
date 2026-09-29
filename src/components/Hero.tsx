@@ -167,7 +167,7 @@ export const Hero: React.FC = () => {
               >
                 <div className="relative aspect-square rounded-[20px] overflow-hidden bg-background-secondary">
                   <img
-                    src="/profile.png"
+                    src={`${import.meta.env.BASE_URL}profile.png`}
                     alt="Shaik Nayab Rasool - AI/ML Developer and Python Engineer"
                     width={400}
                     height={400}
@@ -177,7 +177,7 @@ export const Hero: React.FC = () => {
                       // Fallback to jpg if png has issue
                       const target = e.currentTarget;
                       if (!target.src.endsWith('profile.jpg')) {
-                        target.src = '/profile.jpg';
+                        target.src = `${import.meta.env.BASE_URL}profile.jpg`;
                       }
                     }}
                   />
